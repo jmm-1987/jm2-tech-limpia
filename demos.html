@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demos reales | Jonatan Murillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #121212;
+      --muted: #6d6d6d;
+      --blue: #2f73ea;
+      --border: #e5e5e7;
+      --shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 44px 20px 70px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .back-link {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3.8vw, 3.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 860px;
+      line-height: 1.65;
+      margin-bottom: 34px;
+    }
+
+    .demos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .demo-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .video-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #dfe5f7;
+    }
+
+    .video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .demo-content {
+      padding: 16px 16px 18px;
+    }
+
+    .demo-content h2 {
+      font-size: 1.05rem;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .demo-content p {
+      color: #5d5d5d;
+      line-height: 1.58;
+      font-size: 0.95rem;
+    }
+
+    .coming-soon {
+      margin-top: 20px;
+      color: #4d4d4d;
+      font-size: 0.95rem;
+    }
+
+    .coming-soon strong {
+      color: var(--blue);
+    }
+
+    @media (max-width: 980px) {
+      .demos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        padding-top: 26px;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .demos-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topbar">
+      <a class="back-link" href="index.html">← Volver a la web principal</a>
+    </div>
+
+    <h1>Demos reales de soluciones a medida</h1>
+    <p class="subtitle">
+      Ejemplos de herramientas construidas para automatizar procesos, ahorrar tiempo y mejorar el control operativo.
+      Esta galería está preparada para crecer con más casos reales.
+    </p>
+
+    <section class="demos-grid">
+      <article class="demo-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Demo 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="demo-content">
+          <h2>Facturación para taller</h2>
+          <p>Sistema simple para emitir facturas, organizar clientes y reducir tareas manuales en el día a día del taller.</p>
+        </div>
+      </article>
+
+      <article class="demo-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Demo 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="demo-content">
+          <h2>Seguimiento de fabricación y pedidos</h2>
+          <p>Panel para controlar estados, avisos por email y cálculos de importes en una fábrica de ropa con pedidos en curso.</p>
+        </div>
+      </article>
+
+      <article class="demo-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/XHOmBV4js_E" title="Demo 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="demo-content">
+          <h2>CRM para inmobiliaria</h2>
+          <p>Gestión de seguimiento comercial con control de clientes, agenda y automatizaciones para no perder oportunidades.</p>
+        </div>
+      </article>
+    </section>
+
+    <p class="coming-soon"><strong>Próximamente:</strong> más demos reales y casos detallados por sector.</p>
+  </main>
+</body>
+</html>
