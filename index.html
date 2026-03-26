@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="JM2 Tech | Software a medida y automatización para empresas" />
+  <meta property="og:description" content="Soy Jonatan Murillo. Desarrollo software a medida para eliminar tareas manuales, reducir errores y dar control real a la operativa de tu empresa." />
+  <meta property="og:image" content="/img/yogrande.png" />
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
   <title>Hero escritorio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -375,6 +380,10 @@
       display: none;
     }
 
+    .mobile-contact-link {
+      display: none;
+    }
+
     @media (max-width: 1200px) {
       .nav-menu {
         gap: 32px;
@@ -395,6 +404,18 @@
       .nav-menu,
       .nav-cta {
         display: none;
+      }
+
+      .mobile-contact-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(0,0,0,0.12);
+        background: rgba(255,255,255,0.9);
+        font-weight: 800;
+        box-shadow: 0 10px 22px rgba(0,0,0,0.10);
       }
 
       .mobile-toggle {
@@ -573,6 +594,8 @@
       Ver demos reales
       <span>→</span>
     </a>
+
+    <a href="#contacto" class="mobile-contact-link">Contacto</a>
 
     <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
       <span></span>
@@ -2135,6 +2158,8 @@
       <a href="https://wa.me/34625433667" target="_blank" class="contact-card">
         <img src="img/tarjeta.png" alt="Tarjeta de contacto">
       </a>
+
+      <a class="about-btn" href="sobremi.html">Sobre mí</a>
   
     </div>
   </section>
@@ -2188,6 +2213,28 @@
     .contact-card img:hover {
       transform: translateY(-4px);
     }
+
+    .about-btn {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: #ffffff;
+      color: #111;
+      font-weight: 700;
+      min-width: 220px;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .about-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(0,0,0,0.12);
+      background: #fafafa;
+    }
   
     @media (max-width: 768px) {
       .contact-section {
@@ -2200,6 +2247,10 @@
   
       .contact-card img {
         max-width: 300px;
+      }
+
+      .about-btn {
+        min-width: min(92vw, 320px);
       }
     }
   </style>
