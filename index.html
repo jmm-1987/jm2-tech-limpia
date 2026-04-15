@@ -251,11 +251,11 @@
       margin-top: 120px;
       max-width: 980px;
       text-align: center;
-      font-size: clamp(2rem, 3.65vw, 3.8rem);
+      font-size: clamp(1.5rem, 2.6vw, 2.5rem);
       line-height: 1.08;
       font-weight: 900;
       letter-spacing: -0.035em;
-      color: #ffffff;
+      color: #111111;
       text-shadow: 0 10px 26px rgba(0,0,0,0.45);
     }
 
@@ -587,7 +587,7 @@
       <a href="#problemas">Qué problemas</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#como-trabajo">Cómo trabajo</a>
-      <a href="#trayectoria">Trayectoria</a>
+      <a href="sobremi.html">Trayectoria</a>
     </nav>
 
     <a href="demos.html" class="nav-cta">
@@ -606,7 +606,7 @@
       <a href="#problemas">Qué problemas</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#como-trabajo">Cómo trabajo</a>
-      <a href="#trayectoria">Trayectoria</a>
+      <a href="sobremi.html">Trayectoria</a>
       <a href="demos.html">Ver demos reales</a>
     </nav>
   </header>
@@ -701,7 +701,9 @@
 
     <div class="hero-content">
       <h1 class="headline">
-        Automatizo procesos de tu empresa para que dejes de depender de Excel y tareas manuales
+        <span>Si tu empresa funciona, pero depende de</span>
+        <span>Excel, tareas manuales y procesos difíciles de</span>
+        <span>controlar...</span>
       </h1>
 
       <p class="hero-subtitle">
@@ -709,12 +711,6 @@
       </p>
 
       <a href="demos.html" class="hero-cta">Ver demos reales</a>
-
-      <div class="hero-proof">
-        <span>✔ +5 años desarrollando soluciones a medida</span>
-        <span>✔ Experiencia en automatización de procesos</span>
-        <span>✔ Proyectos reales en empresas</span>
-      </div>
 
       <a class="scroll-cue" href="#problemas" aria-label="Bajar para ver más">
         <span></span>
@@ -2192,7 +2188,9 @@
     }
 
     .contact-card {
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
       line-height: 0;
       border: none;
       outline: none;
@@ -2226,6 +2224,8 @@
       color: #111;
       font-weight: 700;
       min-width: 220px;
+      margin-left: auto;
+      margin-right: auto;
       box-shadow: 0 12px 26px rgba(0,0,0,0.08);
       transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
